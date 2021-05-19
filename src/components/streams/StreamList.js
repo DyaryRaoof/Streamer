@@ -39,6 +39,8 @@ class StreamList extends React.Component {
           </div>
         );
       }
+
+      return null;
     });
   };
 
@@ -69,4 +71,5 @@ const mapStateToProps = (state) => {
     isSignedIn: state.auth.isSignedIn,
   };
 };
+
 export default connect(mapStateToProps, { fetchStreams })(StreamList);
